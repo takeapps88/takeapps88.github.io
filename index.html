@@ -1,80 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+    .material-icons {
+        vertical-align: middle;
+        font-size: 24px;
+        color: #333;
+    }
+    .contact-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        padding-top: 1em;
+    }
+</style>
+<title>My Portfolio</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background: #35424a;
+        color: #ffffff;
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .section {
+        margin: 2em 0;
+    }
+
+    .section h2 {
+        background: #35424a;
+        color: #ffffff;
+        padding: 0.5em;
+        margin: 0;
+    }
+
+    .section p {
+        padding: 1em;
+        background: #ffffff;
+        margin: 0;
+    }
+
+    .section ul {
+        padding: 1em;
+        background: #ffffff;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: center;
+    }
+
+    .section ul li .app-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+    }
+
+        .section ul li .app-links img {
+            width: 135px; /* アイコンのサイズを統一 */
+            height: auto;
         }
-        header {
-            background: #35424a;
-            color: #ffffff;
-            padding: 1em 0;
-            text-align: center;
+
+    .section ul li a {
+        text-decoration: none;
+        color: #333;
+    }
+
+        .section ul li a:hover {
+            text-decoration: underline;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        .section {
-            margin: 2em 0;
-        }
-        .section h2 {
-            background: #35424a;
-            color: #ffffff;
-            padding: 0.5em;
-            margin: 0;
-        }
-        .section p {
-            padding: 1em;
-            background: #ffffff;
-            margin: 0;
-        }
-        .section ul {
-            padding: 1em;
-            background: #ffffff;
-            list-style: none;
-        }
+
+    .section ul li {
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        text-align: center;
+        padding: 1em;
+        transition: transform 0.3s;
+        flex-basis: calc(33.333% - 1em);
+    }
+
+    .section ul li:hover {
+        transform: scale(1.02);
+    }
+
+    .section ul li img {
+        max-width: 120px;
+        height: 120px;
+        border-radius: 15px;
+        margin-bottom: 1em;
+    }
+
+    .section ul li .app-title {
+        font-size: 1.2em;
+        font-weight: 600;
+        margin: 0.5em 0;
+        color: #333;
+    }
+
+    @media (max-width: 768px) {
         .section ul li {
-            margin: 0.5em 0;
+            flex-basis: calc(50% - 1em);
         }
-        footer {
-            text-align: center;
-            padding: 1em 0;
-            background: #35424a;
-            color: #ffffff;
+    }
+
+    @media (max-width: 480px) {
+        .section ul li {
+            flex-basis: calc(100% - 1em);
         }
-    </style>
+    }
+    .section .contact-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        padding-top: 1em;
+    }
+    .section .contact-links img, .section .contact-links .material-icons {
+        width: 24px;
+        height: 24px;
+    }
+</style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-    </header>
+<header>
+    <h1>Welcome to My Portfolio</h1>
+</header>
+<div class="container">
+    <div class="section">
+        <h2>Self-Introduction</h2>
+        <p>From Japan! I'm a hobbyist app developer, creating unique experiences with Flutter in my spare time. Curious? Check out my creations!</p>
+    </div>
+    <div class="section">
+        <h2>Released Apps</h2>
+        <ul>
+            <li>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ab/db/d5/abdbd5e0-a731-c85a-5f17-2d099cdfb701/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/540x540bb.jpg" alt="Pose & Tracking">
+                <p class="app-title">Pose &amp; Tracking</p>
+                <div class="app-links">
+                    <a href="https://apps.apple.com/us/app/pose-tracking/id6476629721" target="_blank">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.takeapps88.pose_and_tracking" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2c/e1/cb/2ce1cbb7-6315-d635-df95-8dbe046bae30/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/540x540bb.jpg" alt="Word Retrieval Training">
+                <p class="app-title">Word Retrieval Training</p>
+                <div class="app-links">
+                    <a href="https://apps.apple.com/app/word-retrieval-training/id6450615677" target="_blank">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.takeapps88pro.word_retrieval_training" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/be/25/e8/be25e8d2-db6d-6453-a62a-10aca7201f87/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/540x540bb.jpg" alt="Gradient Counter">
+                <p class="app-title">Gradient Counter</p>
+                <div class="app-links">
+                    <a href="https://apps.apple.com/us/app/gradient-counter/id6446219224" target="_blank">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.takeapps88.gradient_counter" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/78/a2/55/78a255ae-d0bf-83c2-b1e7-07c3f9962701/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/540x540bb.jpg" alt="Neumorphic Simple Counter">
+                <p class="app-title">Neumorphic Simple Counter</p>
+                <div class="app-links">
+                    <a href="https://apps.apple.com/us/app/neumorphic-simple-counter/id6467534428" target="_blank">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.takeapps88.neumorphic_simple_counter" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a5/37/33/a5373366-216d-e2f5-c21a-e51a91070268/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/540x540bb.jpg" alt="Kyoto AI Quiz">
+                <p class="app-title">Kyoto AI Quiz</p>
+                <div class="app-links">
+                    <a href="https://apps.apple.com/us/app/%E4%BA%AC%E9%83%BDai%E3%82%AF%E3%82%A4%E3%82%BA/id6446956966" target="_blank">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.takeapps88.kyoto_ai_quiz" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ae/97/52/ae975294-169e-5cc9-5a4c-95597f4f4964/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/540x540bb.jpg" alt="Basketball AI Quiz">
+                <p class="app-title">Basketball AI Quiz</p>
+                <div class="app-links">
+                    <a href="https://apps.apple.com/us/app/basketball-ai-quiz/id6463494611" target="_blank">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.takeapps88.basketball_ai_quiz" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
     <div class="container">
         <div class="section">
-            <h2>Self-Introduction</h2>
-            <p>From Japan! I'm a hobbyist app developer, creating unique experiences with Flutter in my spare time. Curious? Check out my creations!</p>
-        </div>
-        <div class="section">
-            <h2>Released Apps</h2>
-            <ul>
-                <li>Gradient Counter</li>
-                <li>Word Retrieval Training</li>
-                <li>Kyoto AI Quiz</li>
-            </ul>
-        </div>
-        <div class="section">
             <h2>Contact</h2>
-            <p>Twitter: <a href="https://x.com/kaifayong112185" target="_blank">Pyon'sApplications(՞ o̴̶̷̤ ̫ o̴̶̷̤ ՞)@kaifayong112185</a></p>
-            <p>Email: <a href="mailto:takeapps88@gmail.com">takeapps88@gmail.com</a></p>
+            <div class="contact-links">
+                <a href="https://x.com/kaifayong112185" target="_blank">
+                    <img src="https://about.twitter.com/etc/designs/about2-twitter/public/img/favicon-32x32.png" alt="Twitter Icon">
+                </a>
+                <a href="mailto:takeapps88@gmail.com">
+                    <i class="material-icons">email</i>
+                </a>
+            </div>
         </div>
     </div>
+</div>
 </body>
 </html>
