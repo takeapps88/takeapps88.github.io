@@ -175,6 +175,7 @@ video.unrulymedia.com, 392157850, RESELLER
 video.unrulymedia.com, 819070080, RESELLER
 videoheroes.tv, 212499, RESELLER, 064bc410192443d8
 vidoomy.com, 7646534, RESELLER
+vungle.com, 69ed0b1f7dbb2c94758ed458, DIRECT, c107d686becd2d77
 webeyemob.com, 70097, RESELLER
 webeyemob.com, 70104, RESELLER
 xandr.com, 13167, RESELLER, f5ab79cb980f11d1
